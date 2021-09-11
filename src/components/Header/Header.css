@@ -1,0 +1,23 @@
+header {
+    padding-top: 40px;
+    padding-left: 64px;
+    padding-right: 57px;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    height: 71px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 71px;
+}
+
+.logo h3 {
+    margin-left: 30px;
+    color: #0B240F;
+}
