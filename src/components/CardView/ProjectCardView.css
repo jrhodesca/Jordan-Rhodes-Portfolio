@@ -1,0 +1,50 @@
+.project-card {
+    margin: 50px;
+    width: 420px;
+    height: 420px;
+}
+
+.card-wrapper:hover {
+    box-shadow: #040E06 3 3 3;
+}
+
+.project-card .card-wrapper {
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 15px;
+}
+
+.project-card .card-gradient {
+    top: 0;
+    height: 420px;
+    width: 420px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, rgba(155, 158, 156, 0) 25.73%, rgba(36, 40, 37, 0.464343) 44.98%, rgba(21, 30, 23, 0.791667) 63.7%, #040E06 100%);
+}
+
+.project-card .card-content {
+    padding-top: 245px;
+    padding-bottom: 5px;
+    margin-left: 19px;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 24px;
+    text-align: left;
+
+}
+
+.project-card .card-content h4 {
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.project-card .card-content p {
+    margin: 0;
+    text-decoration: none;
+}
+
+a  {
+    text-decoration: none;
+}
