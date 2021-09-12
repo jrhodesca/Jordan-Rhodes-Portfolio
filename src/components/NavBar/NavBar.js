@@ -9,7 +9,7 @@ function NavBar() {
     return (
         <nav data-testid="nav-bar">
             <ul>
-                <li><Link to="/work" className="nav-link">Work</Link></li>
+                <li><Link to="/" className="nav-link">Work</Link></li>
                 <li><Link to="/about" className="nav-link">About</Link></li>
             </ul>
         </nav>

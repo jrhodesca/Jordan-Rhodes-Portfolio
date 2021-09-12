@@ -1,0 +1,25 @@
+.main .wrapper {
+    background-image: url(../../assets/images/hero_background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 560px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main .wrapper h2 {
+    padding-top: 18px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.card-gallery {
+    max-width: 1140px;
+    margin-top: 168px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
