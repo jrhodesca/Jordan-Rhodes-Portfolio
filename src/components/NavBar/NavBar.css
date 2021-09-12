@@ -1,0 +1,28 @@
+nav {
+    text-align: right;
+    margin-left: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 26px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #39B54A;
+    text-decoration-thickness: 3px;
+}
