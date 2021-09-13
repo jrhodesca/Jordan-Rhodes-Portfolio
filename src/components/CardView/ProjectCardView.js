@@ -8,20 +8,20 @@ import { Link } from 'react-router-dom';
 /** Styles */
 import './ProjectCardView.css';
 
-function ProjectCardView(props) {
+function ProjectCardView({cardDetails}) {
     const { Meta } = Card;
 
     return (
-        <Link to={"/" + props.cardDetails.projectUrl}>
+        <Link to={"/" + cardDetails.type + "?name=" + cardDetails.projectUrl}>
             <Card className="project-card card"
                 hoverable
-                cover={<div className="card-wrapper" style={{backgroundImage: "url(" + props.cardDetails.projectDetails.image +")"}}>
+                cover={<div className="card-wrapper" style={{backgroundImage: "url(" + cardDetails.projectDetails.image +")"}}>
                             <div className="card-gradient">
                                 <div className="card-content">
-                                    <h4>{props.cardDetails.projectDetails.heading}</h4>
-                                    <p>{props.cardDetails.projectDetails.time}</p>
-                                    <p>{props.cardDetails.projectDetails.date}</p>
-                                    <h4>{props.cardDetails.projectDetails.position}</h4>
+                                    <h4>{cardDetails.projectDetails.heading}</h4>
+                                    <p>{cardDetails.projectDetails.time}</p>
+                                    <p>{cardDetails.projectDetails.date}</p>
+                                    <h4>{cardDetails.projectDetails.position}</h4>
                                 </div>
                             </div>
                         </div>}

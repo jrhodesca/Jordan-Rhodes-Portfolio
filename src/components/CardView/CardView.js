@@ -8,13 +8,13 @@ import ProjectCardView from './ProjectCardView';
 
 /** Styles */
 
-function CardView(props) {
+function CardView({cardDetails}) {
     const type = () => {
-        return props.cardDetails.type === "project";
+        return cardDetails.type === "project" || cardDetails.type === "gallery";
     }
 
     return (
-        <>{type() ? <ProjectCardView cardDetails={props.cardDetails} /> : <></>}</>
+        <>{type() ? <ProjectCardView cardDetails={cardDetails} /> : <></>}</>
     );
 
 }

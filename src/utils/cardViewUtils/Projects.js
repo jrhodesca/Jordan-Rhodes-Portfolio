@@ -2,23 +2,29 @@ import coursana from '../../assets/images/coursana-card.png';
 import spisgoht from '../../assets/images/spis-goht-card.png';
 import designs from '../../assets/images/designs-card.png';
 import sketches from '../../assets/images/sketches-card.png';
+import coursanaHero from '../../assets/images/coursana-hero.png';
+import spisgohtHero from '../../assets/images/spis-goht-hero.png';
+import coursanaPdf from '../../assets/pdf/coursana.pdf';
+import spisgohtPdf from '../../assets/pdf/spis-goht.pdf';
+
 
 export const Projects = {
     "projects": [
         {
-            "id": 0,
+            "id": 4,
             "type": "project",
             "projectName": "CoursAna",
             "projectUrl": "coursana",
+            "previousProject": "spisgoht",
             "projectDetails": {
                 "image": coursana,
                 "heading": "Online Learning Platform",
                 "time": "1 month",
                 "date": "2021",
                 "position": "Lead Ux Designer",
-                "pdf": "../../assets/pdf/spis-goht.pdf",
-                "hero": "",
-                "color": "#714CD840",
+                "pdf": coursanaPdf,
+                "hero": coursanaHero,
+                "color": "#DBD2F5",
                 "prototypes": [
                     {
                         "name": "Mobile App",
@@ -28,18 +34,20 @@ export const Projects = {
             }
         },
         {
+            "id": 3,
             "type": "project",
             "projectName": "Spis Goht App",
             "projectUrl": "spisghot",
+            "nextProject": "coursana",
             "projectDetails": {
                 "image": spisgoht,
                 "heading": "Restaurant App",
                 "time": "3 months",
                 "date": "2021",
                 "position": "Lead Ux Designer",
-                "pdf": "",
-                "hero": "../../assets/pdf/coursana.pdf",
-                "color": "#78CA8280",
+                "pdf": spisgohtPdf,
+                "hero": spisgohtHero,
+                "color": "#BBE4C0",
                 "prototypes": [
                     {
                         "name": "Web",
@@ -58,7 +66,8 @@ export const Projects = {
             }
         },
         {
-            "type": "project",
+            "id": 2,
+            "type": "gallery",
             "projectName": "UI Designs",
             "projectUrl": "designs",
             "projectDetails": {
@@ -70,7 +79,8 @@ export const Projects = {
             }
         },
         {
-            "type": "project",
+            "id": 1,
+            "type": "gallery",
             "projectName": "Sketches",
             "projectUrl": "sketches",
             "projectDetails": {
@@ -80,6 +90,6 @@ export const Projects = {
                 "date": " ",
                 "position": " ",  
             }
-        },
+        }
     ]
 }

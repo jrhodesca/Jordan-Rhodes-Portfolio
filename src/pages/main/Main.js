@@ -1,5 +1,6 @@
 /** React */
-import React from 'react';
+import { render } from 'ejs';
+import React, { useState } from 'react';
 
 /** Components */
 import CardView from '../../components/CardView/CardView';
@@ -10,15 +11,27 @@ import '../DefaultPage.css';
 import './Main.css';
 
 function Main() {
+
+    const [projects, setProjects] = useState("");
+
+    const renderProjects = () => {
+        Projects.projects.forEach(project => {
+            setProjects((prev) => (
+                [...prev, <CardView cardDetails={project}/>]
+            ));
+        });
+    }
+
+    if(projects === ""){
+        renderProjects();
+    }
+
     return (
         <div className="page-content main">
             <div className="wrapper">
                 <h2>Hello! &#128075; I'm a freelance User Experience Designer in Atlanta, Ga.</h2>
                 <div className="card-gallery">
-                    <CardView cardDetails={Projects.projects[0]}/>
-                    <CardView cardDetails={Projects.projects[1]}/>
-                    <CardView cardDetails={Projects.projects[2]}/>
-                    <CardView cardDetails={Projects.projects[3]}/>
+                    {projects}
                 </div>
             </div>
         </div>

@@ -1,3 +1,7 @@
+.main {
+    margin-bottom: 42px;
+}
+
 .main .wrapper {
     background-image: url(../../assets/images/hero_background.png);
     background-repeat: no-repeat;
